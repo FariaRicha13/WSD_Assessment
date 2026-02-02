@@ -31,3 +31,8 @@ Cypress.Commands.add('waitUntilVisible', (selector, timeout=10000) => {
 Cypress.Commands.add('waitUntilNotVisible', (selector, timeout=10000) => {
   return cy.get(selector,{timeout}).should('not.be.visible')
 })
+
+Cypress.Commands.add('logStep', (title, message) => {
+  cy.log(title + `: ${message}`)      
+  console.log(title + `: ${message}`) 
+})

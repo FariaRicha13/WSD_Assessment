@@ -21,6 +21,7 @@ export class LandingPage{
      * @returns LandingPage
      */
     clickOnOneWayRadioButton(){
+        cy.logStep("Click On Oneway Button", "Clicking on one way button")
         cy.get(landingPageObject.getOneWayLabel()).click()
         return this
     }
@@ -29,6 +30,7 @@ export class LandingPage{
      * @returns LandingPage
      */
     clickOnDepartureDateField(){
+        cy.logStep("Click On Departure Date Field", "Clicking Departure Date Field")
         cy.get(landingPageObject.getDepartureInputField()).click()
         return this
     }
@@ -38,6 +40,7 @@ export class LandingPage{
      * @returns LandingPage
      */
     selectDate(nextDate){
+        cy.logStep("Select Next Date", "Selecting "+ nextDate + "as next date")
         cy.get(landingPageObject.getDatePicker(nextDate)).click()
         return this
     }
@@ -46,6 +49,7 @@ export class LandingPage{
      * @returns LandingPage
      */
     clickOnSearchButton(){
+        cy.logStep("Click On Search Button", "Clicking on search button")
         cy.get(landingPageObject.getSearchButton()).click()
         return this
     }
@@ -54,6 +58,7 @@ export class LandingPage{
      * @returns LandingPage
      */
     clickSignInButton(){
+        cy.logStep("Click On Signin Button", "Clicking on signin button")
         cy.get(landingPageObject.getSignInButton()).click()
         return signInPage
     }

@@ -10,6 +10,7 @@ SigninPage(){
  * @returns SigninPage
  */
 assertSignInLabelIsVisible(){
+    cy.logStep("Assert Signin Label is visible", "Asserting that signing label is visible")
     cy.get(signinPageObject.getSignInTitle()).should('be.visible')
     return this
 }
