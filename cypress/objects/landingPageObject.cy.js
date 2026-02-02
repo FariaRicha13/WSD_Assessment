@@ -9,30 +9,53 @@ export class LandingPageObject{
     LandingPageObject(){
 
     }
+    /**
+     * Get one way label locator
+     * @returns oneWayLabelLocator
+     */
     getOneWayLabel(){
         return oneWayLabel
     }
-
+    /**
+     * Get Departure Input Field Locator
+     * @returns departureButtonLocator
+     */
     getDepartureInputField(){
         return departureButton
     }
-
+    /**
+     * Get Return Input Field Locator
+     * @returns returnButtonLocator
+     */
     getReturnInputField(){
         return returnButton
     }
-
+    /**
+     * Get popup container locator
+     * @returns popupContainerLocator
+     */
     getPopupContainer(){
         return popupContainer
     }
-
+    /**
+     * Get Date Picker Locator for specific date
+     * @param {String} currentDate 
+     * @returns dateFieldForSepecificDateLocator
+     */
     getDatePicker(currentDate){
         return dateField + currentDate + "']"
     }
-
+    /**
+     * Get Search Button Locator
+     * @returns searchButtonLocator
+     */
     getSearchButton(){
         return searchButton
     }
-
+    /**
+     * Get signin button locator
+     * @returns signinButtonLocator
+     */
     getSignInButton(){
         return signInButton
     }
