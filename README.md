@@ -16,7 +16,6 @@
 ## Pre-requisities
 ** You must have installed nodejs in your system/local device**
 
-- 
 ## Framework Structure
 The project was developed using the Page Object Model (POM) framework.
 
